@@ -17,7 +17,7 @@ df = spark.read.csv(f"s3a://etltestingdemo/Notebooks/Input_File/testnew.csv", he
 
 # Write the DataFrame to the database table
 df.write.format('jdbc')     .option('url', jdbc_url)     .option('dbtable', table_name)     .option('user', username)     .option('password', password)     .option('driver', 'org.postgresql.Driver')     .mode('append')     .save()
-print("hello prem")
+print("hello premkumarS")
 spark.stop()
 
     
